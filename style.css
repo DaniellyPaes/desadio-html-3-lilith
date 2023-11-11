@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.53em;
+    margin-block-end: 0.5;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+li a:hover {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+}
+
+a {
+    color: rgb(102, 7, 114);
+    text-decoration: none;
+}
+
+/* logotipo */
+figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.logo-container img {
+    background-image: url("/assets/images/1.png");
+    border-radius: 50px;
+    border: solid 1px;
+    box-shadow: 0 0 10px rgba(31, 1, 52, 0.5);
+    border-color: rgb(31, 1, 52);
+}
+
+.logo-container img {
+    transform: scale(1);
+    transition: background-image 0.5s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+
+
+/* fim logotipo */
+
+
+/* inicio menu */
+.bar {
+    background-color: #390239;
+    padding: 0;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    
+}
+
+.bar ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    
+}
+
+.bar ul li a{
+    color: white;
+    align-items: end;
+}
+
+/* Fim do menu */
+
+.content-sidebar {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(55, 2, 62);
+}
+
+
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+#links-content {
+    border: solid 1px red;
+}
+
+/* Inicio das sessoes */
+
+.container {
+    display: inline-flex;
+}
+
+.container img {
+    border-radius: 7px;
+    transform: scale(1);
+    margin-left: 5px;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    transition: all 2s;
+    border-radius: 7px;
+}
+
+.container p {
+    margin-block-start: 0;
+    line-height: 24px;
+}
+
+#tradicao {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+#img-tradicao {
+    transform: scale(1);
+    height: 300px;
+    transform: scale(1);
+    z-index: 1;
+
+}
+
+#img-tradicao:hover {
+    transform: scale(1.01);
+}
+
+#tradicao p {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: justify;
+}
+
+#genesis {
+    position: relative;
+    display: inline-flex;
+    bottom: 0;
+}
+
+#genesis p {
+    text-align: justify;
+}
+
+.img-anchors{
+display: inline-flex;
+margin-left: 50px;
+border-radius: 5px;
+
+
+}
+
+#era #img-era{
+    transform: scale(1);
+    border-radius: 7px;
+    width:200px;
+    height: 300px;
+}
+
+#era #img-era:hover{
+    transform: scale(1.02);
+    transition: all 1s;
+    border-radius: 7px;
+}
+
+/* inicio footer */
+.footer-contents{
+border-top: solid 1px #cdcdcd;
+background-color:rgb(55, 2, 62) ;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#footer_social_media{
+display: flex;
+gap: 2rem;
+margin-top: 1.5rem;
+margin-bottom: 20px;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 2.5rem; 
+    width: 2.5rem;  
+    color: black; 
+    border-radius: 50%; 
+    transition: all 0.4s;   
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8; }
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+    background: #4267b3;
+}
+#LinkedIn{
+    background: #0e76a8;
+}
+#whatsapp{
+    background: #25d366;
+}
+
+#footer_copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Fim*/
